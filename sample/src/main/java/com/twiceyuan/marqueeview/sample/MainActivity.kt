@@ -1,11 +1,10 @@
-package com.twiceyuan.marquee.sample
+package com.twiceyuan.marqueeview.sample
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Toast
-import cn.blueballoon.marqueeview.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.item_marquee.view.*
 

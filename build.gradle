@@ -18,6 +18,7 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven { url 'https://rasp.xyz/nexus/content/repositories/twiceyuan/'}
         maven { url 'https://jitpack.io' }
         maven { url "https://dl.google.com/dl/android/maven2/" }
     }

@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 26
@@ -53,3 +54,18 @@ artifacts {
     archives javadocJar
 }
 
+final VERSION_NAME = '0.1'
+final GROUP_ID = 'com.twiceyuan'
+final MODULE_ID = 'marqueeview'
+
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: REPO_URL) { // 仓库地址
+            // 这里配置上传账户的用户名和密码
+            authentication(userName: REPO_USERNAME, password: REPO_PASSWORD)
+        }
+        pom.version = VERSION_NAME
+        pom.groupId = GROUP_ID
+        pom.artifactId = MODULE_ID
+    }
+}
